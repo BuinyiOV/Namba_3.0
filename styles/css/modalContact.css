@@ -1,0 +1,169 @@
+.contact-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.contact-modal.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+.contact-modal.is-open .contact-modal__content {
+  transform: scale(1);
+  opacity: 1;
+}
+.contact-modal__overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+.contact-modal__content {
+  position: relative;
+  z-index: 1;
+  width: min(520px, 100vw - 30px);
+  max-height: calc(100vh - 40px);
+  padding: 35px 30px;
+  box-sizing: border-box;
+  background: #0d0d0d;
+  border: 1px solid #292929;
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+  transform: scale(0.9);
+  opacity: 0;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #333 #111;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.contact-modal__content::-webkit-scrollbar {
+  width: 5px;
+}
+.contact-modal__content::-webkit-scrollbar-track {
+  background: #111;
+}
+.contact-modal__content::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 10px;
+}
+.contact-modal__content h2 {
+  margin: 0 0 30px;
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+}
+.contact-modal__close {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  border: 1px solid #292929;
+  border-radius: 50%;
+  background: transparent;
+  color: #777;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+.contact-modal__close:hover {
+  background: #181818;
+  border-color: #0f6b4f;
+  color: #fff;
+  transform: rotate(90deg);
+}
+.contact-modal__items {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 15px;
+}
+.contact-modal__item {
+  flex: 1 1 0;
+  min-width: 0;
+}
+.contact-modal__item a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 140px;
+  padding: 20px 10px;
+  box-sizing: border-box;
+  border: 1px solid #292929;
+  border-radius: 10px;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+.contact-modal__item a:hover {
+  background: #181818;
+  border-color: #0f6b4f;
+  transform: translateY(-3px);
+}
+.contact-modal__item a:hover p {
+  color: #0f6b4f;
+}
+.contact-modal__item img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 14px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.contact-modal__item p {
+  margin: 0;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+  text-align: center;
+  transition: color 0.2s ease;
+}
+
+body.contact-modal-open {
+  overflow: hidden;
+}
+
+@media (max-width: 600px) {
+  .contact-modal__content {
+    width: calc(100vw - 20px);
+    max-height: calc(100vh - 20px);
+    padding: 30px 20px;
+    border-radius: 14px;
+  }
+  .contact-modal__content h2 {
+    margin-bottom: 25px;
+    font-size: 21px;
+  }
+  .contact-modal__items {
+    gap: 8px;
+  }
+  .contact-modal__item a {
+    min-height: 120px;
+    padding: 15px 5px;
+  }
+  .contact-modal__item img {
+    width: 42px;
+    height: 42px;
+    margin-bottom: 10px;
+  }
+  .contact-modal__item p {
+    font-size: 12px;
+  }
+}

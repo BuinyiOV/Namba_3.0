@@ -1,0 +1,176 @@
+@charset "UTF-8";
+.nav-links a {
+  position: relative;
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.nav-links a.active {
+  color: #0f6b4f;
+}
+
+.nav-links a.active::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  width: 70%;
+  height: 2px;
+  transform: translateX(-50%);
+  background: #0f6b4f;
+  border-radius: 2px;
+}
+
+.roll-menu > li {
+  position: relative;
+  overflow: visible;
+  z-index: 1;
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s ease;
+}
+
+.roll-menu > li:hover {
+  z-index: 10;
+  transform: translateY(-6px);
+}
+
+.roll-img-wrap {
+  position: relative;
+  width: 100%;
+  height: 240px;
+  overflow: visible;
+  background-color: #0d0d0d;
+  background-image: linear-gradient(rgba(5, 5, 5, 0.85), rgba(5, 5, 5, 0.85)), url("/img/slider/plate.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.roll-img-wrap .roll-img {
+  display: block;
+  width: 100%;
+  height: 240px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background: none;
+  position: relative;
+  z-index: 2;
+  transform-origin: center center;
+  transition: transform 0.65s cubic-bezier(0.22, 1, 0.36, 1), filter 0.4s ease;
+}
+
+.roll-img-wrap .roll-img.image-hover {
+  transform: scale(1.2);
+}
+
+.nav-links a {
+  position: relative;
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  transform: translateX(-50%);
+  background: #0f6b4f;
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+  transform: translateY(-2px);
+}
+
+.nav-links a:hover::after {
+  width: 70%;
+}
+
+.site-header {
+  transition: background 0.35s ease, box-shadow 0.35s ease;
+}
+
+.site-header:hover {
+  background: rgba(0, 0, 0, 0.92);
+}
+
+button,
+.phone-button,
+#toggle-cart {
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+
+button:hover,
+.phone-button:hover,
+#toggle-cart:hover {
+  transform: translateY(-2px);
+}
+
+button:active,
+.phone-button:active,
+#toggle-cart:active {
+  transform: translateY(0) scale(0.97);
+}
+
+.contact-item,
+.opening-hours {
+  transition: transform 0.35s ease, background 0.35s ease;
+}
+
+.contact-item:hover,
+.opening-hours:hover {
+  transform: translateY(-4px);
+}
+
+.map {
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.map:hover {
+  transform: scale(1.01);
+}
+
+.site-footer {
+  transition: opacity 0.5s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.pulse-span {
+  display: inline-block;
+  /* Обов'язково для коректної анімації трансформацій */
+  color: #e1e1e1;
+  /* Колір тексту всередині (можна змінити) */
+  background-color: #0f6b4f;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  /* Підключення анімації тривалістю 2 секунди, яка повторюється нескінченно */
+  animation: breathe 2s infinite ease-in-out;
+}
+
+@keyframes breathe {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(15, 107, 79, 0.7);
+  }
+  50% {
+    transform: scale(1.05);
+    /* Легке збільшення (ефект вдиху) */
+    box-shadow: 0 0 0 10px rgba(15, 107, 79, 0);
+    /* Напівпрозора пульсуюча хвиля */
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(15, 107, 79, 0);
+  }
+}

@@ -1,0 +1,178 @@
+.delivery-page {
+  width: 100%;
+}
+
+.delivery-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 420px;
+  padding: 80px 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.delivery-hero__inner {
+  width: min(700px, 100%);
+  margin: 0 auto;
+}
+.delivery-hero__label {
+  margin: 0 0 15px;
+  color: #0f6b4f;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.delivery-hero h1 {
+  margin: 0 0 25px;
+  color: #fff;
+  font-size: clamp(36px, 6vw, 64px);
+  font-weight: 700;
+  line-height: 1.1;
+}
+.delivery-hero__description {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #aaa;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.delivery-options {
+  padding: 40px 20px 80px;
+}
+
+.delivery-options__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  width: min(900px, 100%);
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.delivery-card {
+  padding: 35px 30px;
+  box-sizing: border-box;
+  background: #0d0d0d;
+  border: 1px solid #292929;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+.delivery-card:hover {
+  border-color: #0f6b4f;
+  transform: translateY(-4px);
+}
+.delivery-card__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 20px;
+  border: 1px solid #292929;
+  border-radius: 50%;
+  background: #111;
+  font-size: 25px;
+}
+.delivery-card__label {
+  margin: 0 0 8px;
+  color: #777;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.delivery-card h2 {
+  margin: 0 0 20px;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 700;
+}
+.delivery-card__price {
+  margin-bottom: 5px;
+  color: #0f6b4f;
+  font-size: 25px;
+  font-weight: 700;
+}
+.delivery-card__minimum {
+  margin: 0 0 20px;
+  color: #fff;
+  font-size: 15px;
+}
+.delivery-card__minimum strong {
+  color: #0f6b4f;
+}
+.delivery-card__description {
+  margin: 0;
+  color: #888;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.delivery-cta {
+  padding: 40px 20px 100px;
+  text-align: center;
+}
+.delivery-cta__inner {
+  width: min(650px, 100%);
+  margin: 0 auto;
+}
+.delivery-cta h2 {
+  margin: 0 0 15px;
+  color: #fff;
+  font-size: clamp(25px, 4vw, 36px);
+}
+.delivery-cta p {
+  margin: 0 auto 30px;
+  color: #888;
+  font-size: 15px;
+  line-height: 1.6;
+}
+.delivery-cta__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0 25px;
+  box-sizing: border-box;
+  border: 1px solid #0f6b4f;
+  border-radius: 7px;
+  background: #0f6b4f;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+}
+.delivery-cta__button:hover {
+  background: #0f6b4f;
+  border-color: #0f6b4f;
+  transform: translateY(-2px);
+}
+.delivery-cta__button:active {
+  transform: scale(0.97);
+}
+
+@media (max-width: 600px) {
+  .delivery-hero {
+    min-height: 350px;
+    padding: 60px 20px;
+  }
+  .delivery-hero__description {
+    font-size: 15px;
+  }
+  .delivery-options {
+    padding: 20px 15px 60px;
+  }
+  .delivery-options__grid {
+    grid-template-columns: 1fr;
+  }
+  .delivery-card {
+    padding: 30px 20px;
+  }
+  .delivery-cta {
+    padding: 20px 20px 70px;
+  }
+}

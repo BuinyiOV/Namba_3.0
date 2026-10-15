@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/* Базовий блок для логотипу */
+.logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  overflow: hidden;
+  /* Запобігає будь-якому виходу елементів за межі */
+  line-height: 0;
+  /* Гарантовано прибирає відступи знизу */
+}
+
+/* Посилання */
+.logo-link {
+  display: block;
+  line-height: 0;
+  text-decoration: none;
+}
+
+/* Налаштування ширини SVG */
+.logo-svg {
+  width: 200px;
+  /* Вкажіть ширину вашого логотипу */
+  height: auto;
+  display: block;
+}
+
+/* Постійний зелений колір логотипу за замовчуванням */
+.logo-link .logo-group {
+  fill: #0f6b4f !important;
+  /* ВАШ КОЛІР ЗА ЗАМОВЧУВАННЯМ */
+  transition: fill 0.25s ease, opacity 0.25s ease;
+}
+
+/* --- ЕФЕКТ ХОВЕРУ (НАВЕДЕННЯ) --- */
+/* Коли мишка наводиться на ПОСИЛАННЯ, змінюється колір ГРУПИ всередині */
+.logo-link:hover .logo-group {
+  fill: #17926d !important;
+  /* Темніший, солідний зелений при наведенні */
+  opacity: 0.85;
+  /* Візуальний ефект відгуку */
+}

@@ -1,0 +1,677 @@
+$content-accent: #0f6b4f;
+
+.content-section {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0 20px;
+}
+
+
+/* =================================
+   CONTENT DETAILS
+================================= */
+
+#content-details-main {
+	width: 100%;
+	max-width: 1100px;
+
+	margin: 60px auto 0;
+
+	box-sizing: border-box;
+
+	color: #aaa;
+
+	font-size: 16px;
+	line-height: 1.7;
+
+
+	h1 {
+		margin: 0 0 35px;
+
+		color: #fff;
+
+		font-size: 36px;
+		font-weight: 600;
+
+		line-height: 1.35;
+
+		text-align: center;
+
+		span {
+			color: $content-accent;
+		}
+	}
+
+
+	h2 {
+		margin: 55px 0 25px;
+
+		color: #fff;
+
+		font-size: 28px;
+		font-weight: 600;
+
+		line-height: 1.3;
+
+		text-align: center;
+	}
+
+
+	h2.green_text {
+		color: $content-accent;
+	}
+
+
+	h3 {
+		margin: 20px 0;
+
+		color: #aaa;
+
+		font-size: 18px;
+		font-weight: 400;
+
+		line-height: 1.6;
+
+		text-align: center;
+	}
+
+
+	p {
+		margin: 0 0 22px;
+
+		color: #999;
+
+		font-size: 16px;
+
+		line-height: 1.8;
+
+		text-align: center;
+	}
+
+
+	b {
+		color: #ccc;
+
+		font-weight: 500;
+	}
+
+
+	// =================================
+	// INFORMATION CARDS
+	// =================================
+
+	ul {
+		margin: 30px 0;
+
+		padding: 0;
+
+		list-style: none;
+	}
+
+
+	li.center_text {
+		position: relative;
+
+		margin: 0 0 18px;
+
+		padding: 22px 25px;
+
+		box-sizing: border-box;
+
+		overflow: hidden;
+
+		color: #999;
+
+		background-color: #0d0d0d;
+
+		background-image:
+			linear-gradient(90deg,
+				rgba(5, 5, 5, 0.88) 0%,
+				rgba(5, 5, 5, 0.72) 50%,
+				rgba(5, 5, 5, 0.88) 100%),
+			url("/img/cardbg.webp");
+
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+
+		border: 1px solid #222;
+
+		border-radius: 10px;
+
+		font-size: 15px;
+
+		line-height: 1.7;
+
+		text-align: center;
+
+		transition:
+			border-color 0.2s ease,
+			transform 0.2s ease,
+			box-shadow 0.2s ease;
+
+
+		&:hover {
+			background-image:
+				linear-gradient(90deg,
+					rgba(5, 5, 5, 0.82) 0%,
+					rgba(5, 5, 5, 0.66) 50%,
+					rgba(5, 5, 5, 0.82) 100%),
+				url("/img/cardbg.webp");
+
+			border-color: $content-accent;
+
+			transform: translateY(-2px);
+
+			box-shadow:
+				0 8px 25px rgba(0, 0, 0, 0.3);
+		}
+
+
+		span {
+			display: inline-block;
+
+			margin-bottom: 7px;
+
+			color: #fff;
+
+			font-size: 18px;
+
+			font-weight: 600;
+
+			line-height: 1.3;
+
+			text-shadow:
+				0 2px 8px rgba(0, 0, 0, 0.8);
+		}
+	}
+
+
+	/* =================================
+       MENU BUTTON
+    ================================= */
+
+	.menu-btn {
+		display: flex;
+
+		align-items: center;
+		justify-content: center;
+
+		width: fit-content;
+
+		min-width: 150px;
+
+		margin: 0 auto 40px;
+
+		padding: 12px 30px;
+
+		box-sizing: border-box;
+
+		color: #fff;
+
+		background-color: $content-accent;
+
+		border: 1px solid $content-accent;
+
+		border-radius: 8px;
+
+		font-size: 15px;
+
+		font-weight: 600;
+
+		line-height: 1;
+
+		cursor: pointer;
+
+		transition:
+			background-color 0.2s ease,
+			border-color 0.2s ease,
+			transform 0.2s ease;
+
+
+		&:hover {
+			background-color: $content-accent;
+
+			border-color: $content-accent;
+
+			transform: translateY(-2px);
+		}
+
+
+		&:active {
+			transform: translateY(0);
+		}
+		a{
+						text-decoration: none;
+			color: #fff;
+		}
+	}
+
+
+	/* =================================
+       CONTACTS
+    ================================= */
+
+	.contacts_title {
+		margin-top: 65px;
+	}
+
+
+	.contakts_box {
+		display: flex;
+
+		align-items: stretch;
+		justify-content: center;
+
+		gap: 20px;
+
+		width: 100%;
+
+		margin: 30px auto 55px;
+
+
+		>div {
+			flex: 1;
+
+			max-width: 220px;
+		}
+
+
+		a {
+			display: flex;
+
+			flex-direction: column;
+
+			align-items: center;
+			justify-content: center;
+
+			height: 100%;
+
+			min-height: 130px;
+
+			padding: 20px;
+
+			box-sizing: border-box;
+
+			color: #aaa;
+
+			background-color: #0d0d0d;
+
+			border: 1px solid #222;
+
+			border-radius: 10px;
+
+			text-decoration: none;
+
+			transition:
+				color 0.2s ease,
+				border-color 0.2s ease,
+				background-color 0.2s ease,
+				transform 0.2s ease;
+
+
+			&:hover {
+				color: #fff;
+
+				background-color: #111;
+
+				border-color: $content-accent;
+
+				transform: translateY(-3px);
+			}
+
+
+			.contakt_item {
+				display: block;
+
+				width: 38px;
+				height: 38px;
+
+				margin-bottom: 12px;
+
+				object-fit: contain;
+			}
+
+
+			p {
+				margin: 0;
+
+				color: inherit;
+
+				font-size: 14px;
+
+				line-height: 1.4;
+			}
+		}
+	}
+
+
+	/* =================================
+       OPENING HOURS
+    ================================= */
+
+	.green_text+h3 {
+		margin-bottom: 25px;
+	}
+
+
+	h3+ul {
+		max-width: 500px;
+
+		margin: 25px auto 45px;
+
+
+		li.center_text {
+			margin-bottom: 8px;
+
+			padding: 10px 15px;
+
+			background-color: transparent;
+
+			background-image: none;
+
+			border: 0;
+
+			border-bottom: 1px solid #222;
+
+			border-radius: 0;
+
+			font-size: 15px;
+
+
+			&:hover {
+				color: #fff;
+
+				background-color: transparent;
+
+				background-image: none;
+
+				border-color: #222;
+
+				transform: none;
+
+				box-shadow: none;
+			}
+		}
+	}
+
+
+	/* =================================
+       MAP
+    ================================= */
+
+	.map {
+		display: block;
+
+		width: 100%;
+		height: 450px;
+
+		margin: 0 auto 40px;
+
+		border: 1px solid #222 !important;
+
+		border-radius: 10px;
+
+		box-sizing: border-box;
+	}
+}
+
+
+/* =================================
+   TABLET
+================================= */
+
+@media (max-width: 800px) {
+
+	.content-section {
+		padding: 0 15px;
+	}
+
+
+	#content-details-main {
+		margin-top: 45px;
+
+
+		h1 {
+			font-size: 30px;
+		}
+
+
+		h2 {
+			margin-top: 45px;
+
+			font-size: 24px;
+		}
+
+
+		h3 {
+			font-size: 17px;
+		}
+
+
+		p {
+			font-size: 15px;
+		}
+
+
+		li.center_text {
+			padding: 20px;
+
+			font-size: 14px;
+
+
+			span {
+				font-size: 17px;
+			}
+		}
+
+
+		.contakts_box {
+			gap: 12px;
+
+
+			>div {
+				max-width: none;
+			}
+
+
+			a {
+				min-height: 120px;
+
+				padding: 15px;
+
+
+				.contakt_item {
+					width: 34px;
+					height: 34px;
+				}
+			}
+		}
+
+
+		.map {
+			height: 400px;
+		}
+	}
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 550px) {
+
+	.content-section {
+		padding: 0 10px;
+	}
+
+
+	#content-details-main {
+		margin-top: 35px;
+
+
+		h1 {
+			margin-bottom: 25px;
+
+			font-size: 24px;
+
+			line-height: 1.4;
+		}
+
+
+		h2 {
+			margin-top: 40px;
+
+			margin-bottom: 20px;
+
+			font-size: 21px;
+		}
+
+
+		h3 {
+			font-size: 15px;
+
+			line-height: 1.6;
+		}
+
+
+		p {
+			margin-bottom: 18px;
+
+			font-size: 14px;
+
+			line-height: 1.7;
+		}
+
+
+		.menu-btn {
+			min-width: 130px;
+
+			margin-bottom: 30px;
+
+			padding: 11px 25px;
+
+			font-size: 14px;
+		}
+
+
+		li.center_text {
+			margin-bottom: 12px;
+
+			padding: 17px 15px;
+
+			font-size: 13px;
+
+			line-height: 1.65;
+
+
+			span {
+				font-size: 16px;
+			}
+		}
+
+
+		.contacts_title {
+			margin-top: 45px;
+		}
+
+
+		.contakts_box {
+			display: grid;
+
+			grid-template-columns: repeat(3, 1fr);
+
+			gap: 8px;
+
+			margin-bottom: 40px;
+
+
+			a {
+				min-height: 105px;
+
+				padding: 10px 5px;
+
+
+				.contakt_item {
+					width: 28px;
+					height: 28px;
+
+					margin-bottom: 8px;
+				}
+
+
+				p {
+					font-size: 11px;
+
+					word-break: break-word;
+				}
+			}
+		}
+
+
+		h3+ul {
+			margin-bottom: 35px;
+
+
+			li.center_text {
+				padding: 9px 5px;
+
+				font-size: 13px;
+			}
+		}
+
+
+		.map {
+			height: 300px;
+
+			margin-bottom: 30px;
+
+			border-radius: 8px;
+		}
+	}
+}
+
+
+/* =================================
+   VERY SMALL SCREENS
+================================= */
+
+@media (max-width: 380px) {
+
+	#content-details-main {
+
+		h1 {
+			font-size: 21px;
+		}
+
+
+		h2 {
+			font-size: 19px;
+		}
+
+
+		.contakts_box {
+
+			a {
+				min-height: 95px;
+
+
+				.contakt_item {
+					width: 25px;
+					height: 25px;
+				}
+
+
+				p {
+					font-size: 10px;
+				}
+			}
+		}
+
+
+		.map {
+			height: 260px;
+		}
+	}
+}
