@@ -1142,19 +1142,19 @@ body.contact-modal-open {
   background-repeat: no-repeat;
 }
 .slider .slider-text:nth-child(1) {
-  background-image: linear-gradient(90deg, rgba(5, 5, 5, 0.45) 0%, rgba(5, 5, 5, 0.78) 45%, rgba(5, 5, 5, 0.45) 100%), url("/img/slider/sticks1.webp");
+  background-image: linear-gradient(90deg, rgba(5, 5, 5, 0.45) 0%, rgba(5, 5, 5, 0.78) 45%, rgba(5, 5, 5, 0.45) 100%), url("/Namba_3.0/img/slider/sticks1.webp");
 }
 .slider .slider-text:nth-child(2) {
-  background-image: linear-gradient(90deg, rgba(5, 5, 5, 0.45) 0%, rgba(5, 5, 5, 0.78) 45%, rgba(5, 5, 5, 0.45) 100%), url("/img/slider/sticks2.webp");
+  background-image: linear-gradient(90deg, rgba(5, 5, 5, 0.45) 0%, rgba(5, 5, 5, 0.78) 45%, rgba(5, 5, 5, 0.45) 100%), url("/Namba_3.0/img/slider/sticks2.webp");
 }
 .slider .slider-text:nth-child(3) {
-  background-image: linear-gradient(90deg, rgba(5, 5, 5, 0.45) 0%, rgba(5, 5, 5, 0.78) 45%, rgba(5, 5, 5, 0.45) 100%), url("/img/slider/box.webp");
+  background-image: linear-gradient(90deg, rgba(5, 5, 5, 0.45) 0%, rgba(5, 5, 5, 0.78) 45%, rgba(5, 5, 5, 0.45) 100%), url("/Namba_3.0/img/slider/box.webp");
 }
 .slider .slider-text:nth-child(4) {
-  background-image: linear-gradient(90deg, rgba(5, 5, 5, 0.45) 0%, rgba(5, 5, 5, 0.78) 45%, rgba(5, 5, 5, 0.45) 100%), url("/img/slider/sticks1.webp");
+  background-image: linear-gradient(90deg, rgba(5, 5, 5, 0.45) 0%, rgba(5, 5, 5, 0.78) 45%, rgba(5, 5, 5, 0.45) 100%), url("/Namba_3.0/img/slider/sticks1.webp");
 }
 .slider .slider-text:nth-child(5) {
-  background-image: linear-gradient(90deg, rgba(5, 5, 5, 0.45) 0%, rgba(5, 5, 5, 0.78) 45%, rgba(5, 5, 5, 0.45) 100%), url("/img/slider/spoon.webp");
+  background-image: linear-gradient(90deg, rgba(5, 5, 5, 0.45) 0%, rgba(5, 5, 5, 0.78) 45%, rgba(5, 5, 5, 0.45) 100%), url("/Namba_3.0/img/slider/spoon.webp");
 }
 .slider .slider-text p {
   position: relative;
@@ -1385,7 +1385,7 @@ body.contact-modal-open {
   overflow: hidden;
   color: #999;
   background-color: #0d0d0d;
-  background-image: linear-gradient(90deg, rgba(5, 5, 5, 0.88) 0%, rgba(5, 5, 5, 0.72) 50%, rgba(5, 5, 5, 0.88) 100%), url("/img/cardbg.webp");
+  background-image: linear-gradient(90deg, rgba(5, 5, 5, 0.88) 0%, rgba(5, 5, 5, 0.72) 50%, rgba(5, 5, 5, 0.88) 100%), url("/Namba_3.0/img/cardbg.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1397,7 +1397,7 @@ body.contact-modal-open {
   transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 #content-details-main li.center_text:hover {
-  background-image: linear-gradient(90deg, rgba(5, 5, 5, 0.82) 0%, rgba(5, 5, 5, 0.66) 50%, rgba(5, 5, 5, 0.82) 100%), url("/img/cardbg.webp");
+  background-image: linear-gradient(90deg, rgba(5, 5, 5, 0.82) 0%, rgba(5, 5, 5, 0.66) 50%, rgba(5, 5, 5, 0.82) 100%), url("/Namba_3.0/img/cardbg.webp");
   border-color: #0f6b4f;
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
@@ -1722,7 +1722,7 @@ body.contact-modal-open {
   width: 116%;
   height: 124%;
   z-index: -2;
-  background-image: linear-gradient(rgba(4, 7, 5, 0.78), rgba(4, 7, 5, 0.88)), url("/img/bg/bg1.jpeg");
+  background-image: linear-gradient(rgba(4, 7, 5, 0.78), rgba(4, 7, 5, 0.88)), url("/Namba_3.0/img/bg/bg1.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2174,7 +2174,7 @@ body.contact-modal-open {
   min-width: 0;
   height: 100%;
   background-color: #111;
-  background-image: linear-gradient(rgba(8, 8, 8, 0.78), rgba(8, 8, 8, 0.78)), url("/img/cardbg.webp");
+  background-image: linear-gradient(rgba(8, 8, 8, 0.78), rgba(8, 8, 8, 0.78)), url("/Namba_3.0/img/cardbg.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2193,7 +2193,7 @@ body.contact-modal-open {
   width: 100%;
   height: 240px;
   background-color: #0d0d0d;
-  background-image: linear-gradient(rgba(5, 5, 5, 0.85), rgba(5, 5, 5, 0.85)), url("/img/slider/plate.webp");
+  background-image: linear-gradient(rgba(5, 5, 5, 0.85), rgba(5, 5, 5, 0.85)), url("/Namba_3.0/img/slider/plate.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2537,7 +2537,7 @@ footer .footer_block .footer_copy {
   height: 240px;
   overflow: visible;
   background-color: #0d0d0d;
-  background-image: linear-gradient(rgba(5, 5, 5, 0.85), rgba(5, 5, 5, 0.85)), url("/img/slider/plate.webp");
+  background-image: linear-gradient(rgba(5, 5, 5, 0.85), rgba(5, 5, 5, 0.85)), url("/Namba_3.0/img/slider/plate.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2675,7 +2675,7 @@ button:active,
 }
 @font-face {
   font-family: "Copperplate Gothic Light";
-  src: url("/fonts/copperplate.ttf") format("truetype");
+  src: url("/Namba_3.0/fonts/copperplate.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -2691,7 +2691,7 @@ body::before {
   left: 0;
   width: 100%;
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.85)), url("/img/bg/bg1.jpeg") 80% top/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.85)), url("/Namba_3.0/img/bg/bg1.jpeg") 80% top/cover no-repeat;
   z-index: -1;
 }
 

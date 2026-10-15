@@ -36,19 +36,19 @@
   background-repeat: no-repeat;
 }
 .slider .slider-text:nth-child(1) {
-  background-image: linear-gradient(90deg, rgba(5, 5, 5, 0.45) 0%, rgba(5, 5, 5, 0.78) 45%, rgba(5, 5, 5, 0.45) 100%), url("/img/slider/sticks1.webp");
+  background-image: linear-gradient(90deg, rgba(5, 5, 5, 0.45) 0%, rgba(5, 5, 5, 0.78) 45%, rgba(5, 5, 5, 0.45) 100%), url("/Namba_3.0/img/slider/sticks1.webp");
 }
 .slider .slider-text:nth-child(2) {
-  background-image: linear-gradient(90deg, rgba(5, 5, 5, 0.45) 0%, rgba(5, 5, 5, 0.78) 45%, rgba(5, 5, 5, 0.45) 100%), url("/img/slider/sticks2.webp");
+  background-image: linear-gradient(90deg, rgba(5, 5, 5, 0.45) 0%, rgba(5, 5, 5, 0.78) 45%, rgba(5, 5, 5, 0.45) 100%), url("/Namba_3.0/img/slider/sticks2.webp");
 }
 .slider .slider-text:nth-child(3) {
-  background-image: linear-gradient(90deg, rgba(5, 5, 5, 0.45) 0%, rgba(5, 5, 5, 0.78) 45%, rgba(5, 5, 5, 0.45) 100%), url("/img/slider/box.webp");
+  background-image: linear-gradient(90deg, rgba(5, 5, 5, 0.45) 0%, rgba(5, 5, 5, 0.78) 45%, rgba(5, 5, 5, 0.45) 100%), url("/Namba_3.0/img/slider/box.webp");
 }
 .slider .slider-text:nth-child(4) {
-  background-image: linear-gradient(90deg, rgba(5, 5, 5, 0.45) 0%, rgba(5, 5, 5, 0.78) 45%, rgba(5, 5, 5, 0.45) 100%), url("/img/slider/sticks1.webp");
+  background-image: linear-gradient(90deg, rgba(5, 5, 5, 0.45) 0%, rgba(5, 5, 5, 0.78) 45%, rgba(5, 5, 5, 0.45) 100%), url("/Namba_3.0/img/slider/sticks1.webp");
 }
 .slider .slider-text:nth-child(5) {
-  background-image: linear-gradient(90deg, rgba(5, 5, 5, 0.45) 0%, rgba(5, 5, 5, 0.78) 45%, rgba(5, 5, 5, 0.45) 100%), url("/img/slider/spoon.webp");
+  background-image: linear-gradient(90deg, rgba(5, 5, 5, 0.45) 0%, rgba(5, 5, 5, 0.78) 45%, rgba(5, 5, 5, 0.45) 100%), url("/Namba_3.0/img/slider/spoon.webp");
 }
 .slider .slider-text p {
   position: relative;

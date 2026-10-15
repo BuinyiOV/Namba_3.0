@@ -70,7 +70,7 @@
   overflow: hidden;
   color: #999;
   background-color: #0d0d0d;
-  background-image: linear-gradient(90deg, rgba(5, 5, 5, 0.88) 0%, rgba(5, 5, 5, 0.72) 50%, rgba(5, 5, 5, 0.88) 100%), url("/img/cardbg.webp");
+  background-image: linear-gradient(90deg, rgba(5, 5, 5, 0.88) 0%, rgba(5, 5, 5, 0.72) 50%, rgba(5, 5, 5, 0.88) 100%), url("/Namba_3.0/img/cardbg.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -82,7 +82,7 @@
   transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 #content-details-main li.center_text:hover {
-  background-image: linear-gradient(90deg, rgba(5, 5, 5, 0.82) 0%, rgba(5, 5, 5, 0.66) 50%, rgba(5, 5, 5, 0.82) 100%), url("/img/cardbg.webp");
+  background-image: linear-gradient(90deg, rgba(5, 5, 5, 0.82) 0%, rgba(5, 5, 5, 0.66) 50%, rgba(5, 5, 5, 0.82) 100%), url("/Namba_3.0/img/cardbg.webp");
   border-color: #0f6b4f;
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
