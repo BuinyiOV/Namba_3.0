@@ -714,7 +714,9 @@ $akcent-color-hover: #17926d;
 	grid-template-rows: 1fr;
 	opacity: 1;
 
-	overflow: hidden;
+	/* Залишаємо hidden ТІЛЬКИ по вертикалі (щоб працювала анімація згортання), 
+	 але дозволяємо горизонтальний скрол, якщо він знадобиться вище */
+	overflow-y: hidden;
 
 	transition:
 		grid-template-rows 0.4s ease,
@@ -724,7 +726,43 @@ $akcent-color-hover: #17926d;
 
 	.nav-links {
 		min-height: 0;
-		overflow: hidden;
+
+		/* 1. Вмикаємо горизонтальний скрол для мобільних */
+		overflow-x: auto;
+		overflow-y: hidden;
+
+		/* 2. Вибудовуємо всі посилання в один суцільний рядок */
+		display: flex;
+		flex-wrap: nowrap;
+		gap: 15px;
+		/* Відстань між кнопками категорій */
+
+		/* 3. Прибираємо дефолтні маркери списку <ul> */
+		list-style: none;
+		padding: 10px 15px;
+		/* Внутрішні відступи для зручного натискання */
+		margin: 0;
+
+		/* Плавний скрол пальцем на iOS/Android */
+		-webkit-overflow-scrolling: touch;
+
+		/* Приховуємо стандартний потворний скролбар браузера */
+		&::-webkit-scrollbar {
+			display: none;
+		}
+
+		/* Забороняємо кнопкам стискатися, щоб текст не переносився */
+		li {
+			flex-shrink: 0;
+		}
+
+		/* Стиль для самих посилань (якщо у вас ще немає) */
+		a {
+			white-space: nowrap;
+			/* Додатковий захист від переносу слів */
+			display: inline-block;
+			text-decoration: none;
+		}
 	}
 
 	&.hidden {

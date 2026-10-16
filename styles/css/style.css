@@ -591,12 +591,47 @@ section,
   display: grid;
   grid-template-rows: 1fr;
   opacity: 1;
-  overflow: hidden;
+  /* Залишаємо hidden ТІЛЬКИ по вертикалі (щоб працювала анімація згортання), 
+   але дозволяємо горизонтальний скрол, якщо він знадобиться вище */
+  overflow-y: hidden;
   transition: grid-template-rows 0.4s ease, opacity 0.3s ease, margin 0.4s ease, padding 0.4s ease;
 }
 .category-nav .nav-links {
   min-height: 0;
-  overflow: hidden;
+  /* 1. Вмикаємо горизонтальний скрол для мобільних */
+  overflow-x: auto;
+  overflow-y: hidden;
+  /* 2. Вибудовуємо всі посилання в один суцільний рядок */
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 15px;
+  /* Відстань між кнопками категорій */
+  /* 3. Прибираємо дефолтні маркери списку <ul> */
+  list-style: none;
+  padding: 10px 15px;
+  /* Внутрішні відступи для зручного натискання */
+  margin: 0;
+  /* Плавний скрол пальцем на iOS/Android */
+  -webkit-overflow-scrolling: touch;
+  /* Приховуємо стандартний потворний скролбар браузера */
+}
+.category-nav .nav-links::-webkit-scrollbar {
+  display: none;
+}
+.category-nav .nav-links {
+  /* Забороняємо кнопкам стискатися, щоб текст не переносився */
+}
+.category-nav .nav-links li {
+  flex-shrink: 0;
+}
+.category-nav .nav-links {
+  /* Стиль для самих посилань (якщо у вас ще немає) */
+}
+.category-nav .nav-links a {
+  white-space: nowrap;
+  /* Додатковий захист від переносу слів */
+  display: inline-block;
+  text-decoration: none;
 }
 .category-nav.hidden {
   grid-template-rows: 0fr;
@@ -2675,7 +2710,7 @@ button:active,
 }
 @font-face {
   font-family: "Copperplate Gothic Light";
-  src: url("/Namba_3.0/fonts/copperplate.ttf") format("truetype");
+  src: url("/fonts/copperplate.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -2691,7 +2726,7 @@ body::before {
   left: 0;
   width: 100%;
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.85)), url("/Namba_3.0/img/bg/bg1.jpeg") 80% top/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.85)), url("/img/bg/bg1.jpeg") 80% top/cover no-repeat;
   z-index: -1;
 }
 
