@@ -41,7 +41,7 @@ section,
 }
 
 :root {
-  color-scheme: light;
+  color-scheme: only light;
   forced-color-adjust: none;
 }
 
@@ -50,6 +50,7 @@ svg,
 a,
 li {
   forced-color-adjust: none !important;
+  color-scheme: only light !important;
 }
 
 #preloader {
