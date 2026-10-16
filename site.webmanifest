@@ -1,0 +1,22 @@
+{
+	"name": "Namba Sushi Szamotuły",
+	"short_name": "Namba Sushi",
+	"description": "Świeże sushi на zamówienie w Szamotułach. Klasyczne i autorskie rolki, zestawy, sushi burgery i sandwicze.",
+	"start_url": "/",
+	"display": "standalone",
+	"background_color": "#000000ba",
+	"theme_color": "#0f6b4f",
+	"orientation": "portrait-primary",
+	"icons": [
+		{
+			"src": "/android-chrome-192x192.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		},
+		{
+			"src": "/android-chrome-512x512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	]
+}
