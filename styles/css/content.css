@@ -90,6 +90,9 @@
   line-height: 1.5;
   color: #999;
 }
+.roll-menu li .roll-text .roll-ingredients span {
+  color: #fff;
+}
 .roll-menu li .cart-product-controls {
   display: flex;
   justify-content: flex-end;
