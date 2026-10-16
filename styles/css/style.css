@@ -40,6 +40,18 @@ section,
   list-style: none;
 }
 
+:root {
+  color-scheme: light;
+  forced-color-adjust: none;
+}
+
+span,
+svg,
+a,
+li {
+  forced-color-adjust: none !important;
+}
+
 #preloader {
   position: fixed;
   top: 0;

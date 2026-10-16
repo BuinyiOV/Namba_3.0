@@ -37,3 +37,16 @@ section,
 	font-family: "Ubuntu", sans-serif;
 	list-style: none;
 }
+
+:root {
+	color-scheme: light;
+	forced-color-adjust: none;
+}
+
+// Захист для текстових елементів, посилань та графіки по всьому сайту
+span,
+svg,
+a,
+li {
+	forced-color-adjust: none !important;
+}
